@@ -20,3 +20,7 @@ class UserSerializer(serializers.Serializer):
         instance.vk_id = validated_data.get('vk_id', instance.vk_id)
         instance.save()
         return instance
+
+    class Meta:
+        model = User
+        fields = "vk_id"
