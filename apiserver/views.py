@@ -1,19 +1,60 @@
-from django.contrib.auth.models import User, Group
-from rest_framework import viewsets
-from ybsapi2.serializers import UserSerializer, GroupSerializer
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework.renderers import JSONRenderer
+from rest_framework.parsers import JSONParser
+from apiserver.models import User
+from apiserver.serializers import UserSerializer
+from rest_framework import status
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 
 
-class UserViewSet(viewsets.ModelViewSet):
+@api_view(['GET', 'POST'])
+def users_list(request, format=None):
     """
-    API endpoint that allows users to be viewed or edited
+    List all users or create a new one
+    :param request:
+    :param format:
+    :return:
     """
-    queryset = User.objects.all().order_by('-date_joined')
-    serializer_class = UserSerializer
+    if request.method == 'GET':
+        users = User.objects.all()
+        serializer = UserSerializer(users, many=True)
+        return Response(serializer.data)
+
+    elif request.method == 'POST':
+        serializer = UserSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-class GroupViewSet(viewsets.ModelViewSet):
+@api_view(['GET', 'PUT', 'DELETE'])
+def user_detail(request, pk, format=None):
     """
-    API endpoint that allows groups to be viewed or edited
+    Retrieve, updated or delete a user
+    :param request:
+    :param pk:
+    :param format:
+    :return:
     """
-    queryset = Group.objects.all()
-    serializer_class = GroupSerializer
+    try:
+        user = User.objects.get(pk=pk)
+    except User.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+    if request.method == 'GET':
+        serializer = UserSerializer(user)
+        return Response(serializer.data)
+
+    elif request.method == 'PUT':
+        serializer = UserSerializer(user, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    elif request.method == 'DELETE':
+        user.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
