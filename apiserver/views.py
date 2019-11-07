@@ -87,6 +87,6 @@ def workload(request, **kwargs):
             res.append(value)
         ts2 = round((time.time() - ts1), 2)
         print(f"****** {ts2} seconds ****** ")
-        return Response(data={'msg': 'Done'}, status=status.HTTP_200_OK)
+        return Response(data={'msg': f'Done in {ts2} seconds'}, status=status.HTTP_200_OK)
     elif request.version == 'v2':
         return Response(data={'msg': 'Not implemented yet'}, status=status.HTTP_404_NOT_FOUND)
