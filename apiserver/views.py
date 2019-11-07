@@ -7,6 +7,7 @@ from apiserver.serializers import UserSerializer
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+import time
 
 
 @api_view(['GET', 'POST'])
@@ -51,22 +52,41 @@ def user_detail(request, pk, format=None, **kwargs):
     :param format:
     :return:
     """
-    try:
-        user = User.objects.get(pk=pk)
-    except User.DoesNotExist:
-        return Response(status=status.HTTP_404_NOT_FOUND)
+    if request.version == 'v1':
+        try:
+            user = User.objects.get(pk=pk)
+        except User.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
 
-    if request.method == 'GET':
-        serializer = UserSerializer(user)
-        return Response(serializer.data)
-
-    elif request.method == 'PUT':
-        serializer = UserSerializer(user, data=request.data)
-        if serializer.is_valid():
-            serializer.save()
+        if request.method == 'GET':
+            serializer = UserSerializer(user)
             return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    elif request.method == 'DELETE':
-        user.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
+        elif request.method == 'PUT':
+            serializer = UserSerializer(user, data=request.data)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+        elif request.method == 'DELETE':
+            user.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+
+    elif request.version == 'v2':
+        return Response(data={'msg': 'Not implemented yet'}, status=status.HTTP_404_NOT_FOUND)
+
+@api_view()
+def workload(request, **kwargs):
+    if request.version == 'v1':
+        print("Processing")
+        ts1 = time.time()
+        res = []
+        for x in range(1000000, 1001050):
+            value = 2**x
+            res.append(value)
+        ts2 = round((time.time() - ts1), 2)
+        print(f"****** {ts2} seconds ****** ")
+        return Response(data={'msg': 'Done'}, status=status.HTTP_200_OK)
+    elif request.version == 'v2':
+        return Response(data={'msg': 'Not implemented yet'}, status=status.HTTP_404_NOT_FOUND)
