@@ -16,6 +16,11 @@ import time
 @api_view()
 def health_check(request, **kwargs):
     if request.version == 'v1':
+        referer = request.META.get('HTTP_REFERER')
+        if referer:
+            print(referer)
+        else:
+            print("No referrer")
         return Response(data={'msg': 'Ok'}, status=status.HTTP_200_OK)
 
     elif request.version == 'v2':
