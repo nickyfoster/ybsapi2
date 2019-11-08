@@ -11,7 +11,7 @@ import time
 
 
 # TODO Add CORS support
-#
+# TODO add security (cookies maybe)
 
 @api_view()
 def health_check(request, **kwargs):
@@ -25,6 +25,7 @@ def health_check(request, **kwargs):
 
     elif request.version == 'v2':
         return Response(data={'msg': 'Not implemented yet'}, status=status.HTTP_404_NOT_FOUND)
+
 
 
 @api_view(['GET', 'POST'])
