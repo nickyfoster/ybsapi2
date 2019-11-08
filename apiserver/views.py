@@ -7,21 +7,25 @@ from apiserver.serializers import UserSerializer
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from apiserver.utils.utils import auth_user
 import time
 
 
 # TODO Add CORS support
 # TODO add security (cookies maybe)
 
+
 @api_view()
 def health_check(request, **kwargs):
     if request.version == 'v1':
-        referer = request.META.get('HTTP_REFERER')
-        if referer:
-            print(referer)
+        token = request.META.get("HTTP_WWW_AUTHENTICATE", None)
+        if auth_user(user_token=token):
+            referer = request.META.get('HTTP_REFERER')
+            if referer:
+                print(referer)
+            return Response(data={'msg': 'Ok'}, status=status.HTTP_200_OK)
         else:
-            print("No referrer")
-        return Response(data={'msg': 'Ok'}, status=status.HTTP_200_OK)
+            return Response(status=status.HTTP_403_FORBIDDEN)
 
     elif request.version == 'v2':
         return Response(data={'msg': 'Not implemented yet'}, status=status.HTTP_404_NOT_FOUND)
