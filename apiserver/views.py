@@ -10,6 +10,18 @@ from rest_framework.response import Response
 import time
 
 
+# TODO Add CORS support
+#
+
+@api_view()
+def health_check(request, **kwargs):
+    if request.version == 'v1':
+        return Response(data={'msg': 'Ok'}, status=status.HTTP_200_OK)
+
+    elif request.version == 'v2':
+        return Response(data={'msg': 'Not implemented yet'}, status=status.HTTP_404_NOT_FOUND)
+
+
 @api_view(['GET', 'POST'])
 def users_list(request, format=None, **kwargs):
     """
@@ -29,11 +41,11 @@ def users_list(request, format=None, **kwargs):
             if serializer.is_valid():
                 vk_id = serializer.validated_data['vk_id']
                 if vk_id != '':
-                    users_list = User.objects.filter(vk_id=vk_id)
-                    if not users_list:
+                    list_of_users = User.objects.filter(vk_id=vk_id)
+                    if not list_of_users:
                         serializer.save()
                     else:
-                        user = users_list[0]
+                        user = list_of_users[0]
                         serializer = UserSerializer(user)
                     return Response(serializer.data)
                 else:
@@ -42,6 +54,7 @@ def users_list(request, format=None, **kwargs):
                 return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     elif request.version == 'v2':
         return Response(data={'msg': 'Not implemented yet'}, status=status.HTTP_404_NOT_FOUND)
+
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def user_detail(request, pk, format=None, **kwargs):
@@ -76,6 +89,7 @@ def user_detail(request, pk, format=None, **kwargs):
     elif request.version == 'v2':
         return Response(data={'msg': 'Not implemented yet'}, status=status.HTTP_404_NOT_FOUND)
 
+
 @api_view()
 def workload(request, **kwargs):
     if request.version == 'v1':
@@ -83,7 +97,7 @@ def workload(request, **kwargs):
         ts1 = time.time()
         res = []
         for x in range(1000000, 1001050):
-            value = 2**x
+            value = 2 ** x
             res.append(value)
         ts2 = round((time.time() - ts1), 2)
         print(f"****** {ts2} seconds ****** ")

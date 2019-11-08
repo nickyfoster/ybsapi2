@@ -1,0 +1,1387 @@
+{
+  'place1': [
+    {
+      'html_attributions': [],
+      'result': {
+        'address_components': [
+          {
+            'long_name': '3',
+            'short_name': '3',
+            'types': [
+              'street_number'
+            ]
+          },
+          {
+            'long_name': 'Манежный переулок',
+            'short_name': 'Манежный пер.',
+            'types': [
+              'route'
+            ]
+          },
+          {
+            'long_name': 'Санкт-Петербург',
+            'short_name': 'СПБ',
+            'types': [
+              'locality',
+              'political'
+            ]
+          },
+          {
+            'long_name': 'Центральный',
+            'short_name': 'Центральный',
+            'types': [
+              'administrative_area_level_3',
+              'political'
+            ]
+          },
+          {
+            'long_name': 'Санкт-Петербург',
+            'short_name': 'Санкт-Петербург',
+            'types': [
+              'administrative_area_level_2',
+              'political'
+            ]
+          },
+          {
+            'long_name': 'Россия',
+            'short_name': 'RU',
+            'types': [
+              'country',
+              'political'
+            ]
+          },
+          {
+            'long_name': '191014',
+            'short_name': '191014',
+            'types': [
+              'postal_code'
+            ]
+          }
+        ],
+        'adr_address': '<span class="street-address">Манежный пер., 3</span>, <span class="locality">Санкт-Петербург</span>, <span class="country-name">Россия</span>, <span class="postal-code">191014</span>',
+        'formatted_address': 'Манежный пер., 3, Санкт-Петербург, Россия, 191014',
+        'formatted_phone_number': '8 (812) 272-55-66',
+        'geometry': {
+          'location': {
+            'lat': 59.943095,
+            'lng': 30.354555
+          },
+          'viewport': {
+            'northeast': {
+              'lat': 59.9445113302915,
+              'lng': 30.3559077802915
+            },
+            'southwest': {
+              'lat': 59.9418133697085,
+              'lng': 30.3532098197085
+            }
+          }
+        },
+        'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png',
+        'id': '9b866be259fef939c3b1ef58bc2efadf62755782',
+        'international_phone_number': '+7 812 272-55-66',
+        'name': 'Студия 44',
+        'opening_hours': {
+          'open_now': False,
+          'periods': [
+            {
+              'close': {
+                'day': 1,
+                'time': '1900'
+              },
+              'open': {
+                'day': 1,
+                'time': '1000'
+              }
+            },
+            {
+              'close': {
+                'day': 2,
+                'time': '1900'
+              },
+              'open': {
+                'day': 2,
+                'time': '1000'
+              }
+            },
+            {
+              'close': {
+                'day': 3,
+                'time': '1900'
+              },
+              'open': {
+                'day': 3,
+                'time': '1000'
+              }
+            },
+            {
+              'close': {
+                'day': 4,
+                'time': '1900'
+              },
+              'open': {
+                'day': 4,
+                'time': '1000'
+              }
+            },
+            {
+              'close': {
+                'day': 5,
+                'time': '1900'
+              },
+              'open': {
+                'day': 5,
+                'time': '1000'
+              }
+            }
+          ],
+          'weekday_text': [
+            'понедельник: 10:00–19:00',
+            'вторник: 10:00–19:00',
+            'среда: 10:00–19:00',
+            'четверг: 10:00–19:00',
+            'пятница: 10:00–19:00',
+            'суббота: Закрыто',
+            'воскресенье: Закрыто'
+          ]
+        },
+        'photos': [
+          {
+            'height': 1463,
+            'html_attributions': [
+              '<a href="https://maps.google.com/maps/contrib/111821679240071751699/photos">Студия 44</a>'
+            ],
+            'photo_reference': 'CmRaAAAARQ6jhR77P6teTXjFnsJWw0prITVpgCuTwA-IaUkf8n4n7mGqABGrJpuf3XwSFIl5zgCO3TOLZX1sDSH7IQN6G9uYkzgmNf-GsE2-zff8kbUi9htnHsUbcTVXcDc_pcEkEhB4Wsn4AvNdemqj8Imt3QspGhTzzTYB0HZxDkhgsHrQLpvq5sT9tw',
+            'width': 2000
+          },
+          {
+            'height': 5000,
+            'html_attributions': [
+              '<a href="https://maps.google.com/maps/contrib/110624663104989976635/photos">Tomas Green</a>'
+            ],
+            'photo_reference': 'CmRaAAAAW0lEq4ovTVuNxmePB-oifvo7qtjpHeTg0rEBYV8C6-jK83nuMvH67-Q189EdcSpj4NAuu52J5oShDdwwLtqllbePaEXhFO01SqJQNC-aJNAPBJaDBc2JR-EqWSBbo7erEhDm0Jtq6VY9yVQUSfF6NiTnGhQQlkPSXXfr1LWYauo1rmBfQhds_A',
+            'width': 7500
+          },
+          {
+            'height': 4160,
+            'html_attributions': [
+              '<a href="https://maps.google.com/maps/contrib/105072207030727369349/photos">Alex Sdobnov</a>'
+            ],
+            'photo_reference': 'CmRaAAAAMAWPPH3y0XpI6gTGNKxR0KtGwzasWThRLwQXcV4BjpjqwuI1n0DFFks_IU_edzRZVOrmmvGCWynmWrgBgmIbd4Spwg6kCqxg_UtQyf6VIMNns2yUomhWzY9Ww_MutMSrEhDAZxFbYnXjBCz9M23jmfyUGhR4dhoXZV3QobOXXgEYo-4U9U7P5A',
+            'width': 2340
+          },
+          {
+            'height': 1000,
+            'html_attributions': [
+              '<a href="https://maps.google.com/maps/contrib/111821679240071751699/photos">Студия 44</a>'
+            ],
+            'photo_reference': 'CmRaAAAAd-ECOK1QGILGx-07bTtd6uY_sbyncpIezY5gSXj1Zyn5OH0xGAQYdP4HbuZeRf6oBR-FX93afqbo9ww-1gE-KeVbZcV9aTfYeX9KH-lQ_0pWLpo_aN99ntrVpOKWk9pWEhBF1mi2hOtnuoyf6X0WGnczGhRhwXvHJ6oHTSzfY-kIYE1wPjnZOw',
+            'width': 666
+          },
+          {
+            'height': 3104,
+            'html_attributions': [
+              '<a href="https://maps.google.com/maps/contrib/109528019204071128111/photos">Polina Vs</a>'
+            ],
+            'photo_reference': 'CmRaAAAAeziwssjW1x1hSa4EdjA_BP5qu5yrrKKZPqniWDC3FVkmnhWPN-dEwpwFPIvSyZw-ZhFbuJxO1zQQx0HU2e62DGE0ypr7eNAab9b46bP8R1J4kpctOm5B9kn9llYbYFpiEhCBMJQ7_Wn6Slmk9WVwhxX6GhR5yZ9oSgZBIqnkwEoZOehAhOBQvQ',
+            'width': 1746
+          },
+          {
+            'height': 4608,
+            'html_attributions': [
+              '<a href="https://maps.google.com/maps/contrib/112375550994197856047/photos">A B</a>'
+            ],
+            'photo_reference': 'CmRaAAAAeIXRVDZvOwtNwg4gGXRUU8TnLaL-ns8DXljXDeaWHdXzpgkPzYLp5Eq3oD71YXTe9ZNPPJyrQxhl2GcKeCax0BWlOuGO0gEROUbhwIoBLHqM_zOC4dtD4spgCxlzEMbaEhCLQmad96-WVK-DPn51IVvbGhRXDloPYyTM0-ZnCKN_Nr_zjCvjqw',
+            'width': 3456
+          },
+          {
+            'height': 680,
+            'html_attributions': [
+              '<a href="https://maps.google.com/maps/contrib/111821679240071751699/photos">Студия 44</a>'
+            ],
+            'photo_reference': 'CmRaAAAAcOtbjxuwgLBaMAHegoOUrTV0je9iWVagtBdCDbI2IBf-7V096rR3XqKb2Ay02atOImMNrk7yp4xmBOPPemX3LdTtSyv4WBglrIdjCOCjLF2Mg0E0VcD-XMPk8iO_tY66EhBnotdeZlE_xiVcNf1PwdiPGhR1Z6QzV_nVuJN09SfD5Y-ovy2FuA',
+            'width': 1000
+          },
+          {
+            'height': 1236,
+            'html_attributions': [
+              '<a href="https://maps.google.com/maps/contrib/110731134096540317660/photos">Сергей Якупов</a>'
+            ],
+            'photo_reference': 'CmRaAAAAPk0CulfD_nzTv9iWWsx53LYvBrnY-02N4dhqD8OEJFEYd5onpyl9BoeppK_MsFX9hx0JgkWZhVjrx249j3NEc7idgECkMpPlhacBwJdfhjEp1pK6v-QFCCoqLFbI43wQEhDyHa96-rRJgLvY3nvPCKXEGhQukl92lBY1MxD57lsPZ61tFph5wA',
+            'width': 2543
+          },
+          {
+            'height': 4160,
+            'html_attributions': [
+              '<a href="https://maps.google.com/maps/contrib/105072207030727369349/photos">Alex Sdobnov</a>'
+            ],
+            'photo_reference': 'CmRaAAAAXLBtRUQ8_hIu3lfBhKsQFnNkQs5oDMv-Ww3RdzTbQFcaS7gTypLJVMqFSlG61e-mBJASGIZfpfaEFnuEvCc1vaMmNwP1ByEylGiVbN944aEe2ICznN08epxIsDPDQARREhCmBL8AonddaotaGYN99pWeGhQBEbgC9tp_wpBsxmXXeCrhG0r9pQ',
+            'width': 2340
+          },
+          {
+            'height': 3456,
+            'html_attributions': [
+              '<a href="https://maps.google.com/maps/contrib/112375550994197856047/photos">A B</a>'
+            ],
+            'photo_reference': 'CmRaAAAAYE79RKweA5gIBcHLXXxcmcevapHMTL3cRRokf-pPT3JpqaJ6eg4oX30j1mereCA0-7lelWOt99dHG98-TImHbi4LCpV4q_-EoDWXNMWinNjpkzeU5QIftjjX2r0dv2m0EhBgSWA0v3XZvWt_Yy0hdj-yGhRFouE0ee7OfuYs1dNbrKmfAJM-sQ',
+            'width': 4608
+          }
+        ],
+        'place_id': 'ChIJ4bl5yJ8xlkYRs0sKjm4dW-o',
+        'plus_code': {
+          'compound_code': 'W9V3+6R Центральный район, Санкт-Петербург, Россия',
+          'global_code': '9GFGW9V3+6R'
+        },
+        'rating': 4.7,
+        'reference': 'ChIJ4bl5yJ8xlkYRs0sKjm4dW-o',
+        'reviews': [
+          {
+            'author_name': 'Сергей Якупов',
+            'author_url': 'https://www.google.com/maps/contrib/110731134096540317660/reviews',
+            'language': 'ru',
+            'profile_photo_url': 'https://lh5.ggpht.com/-7PsD-ni5OuU/AAAAAAAAAAI/AAAAAAAAAAA/2_5znuwxBzM/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg',
+            'rating': 5,
+            'relative_time_description': '7 месяцев назад',
+            'text': 'Был на встрече по приглашению партнеров.Это первое посешение этого места и оно не оставляет равнодушным с самого начала после прохода через вертушку охраны.\n      Сам офис студии находится на последнем этаже.И пока поднимаешься по лестнице можно видеть готовые 3D макеты зданий разработанные сотрудниками Студии 44. Все стены увешаны этими макетами. \n     Этаж где расположена сама Студия 44 похоже был достроен не так давно, т.к. чтоб попасть с предпоследнего этажа в офис компании ведет небычно крутая и узкая лестница.\n    И уже когда выходишь с нее то попадаешь в очень просторный зал, Вы его можете увидеть на моих фото сделаных под впечатлением такого контраста.\n   При общении с сотрудниками могу отметить их интерес ко всему новому и как теории так и как можно это применить в своих проектах чтоб идти в ногу с новыми трендами.',
+            'time': 1549563361
+          },
+          {
+            'author_name': 'Евгений Валяев',
+            'author_url': 'https://www.google.com/maps/contrib/103535520320184791997/reviews',
+            'language': 'ru',
+            'profile_photo_url': 'https://lh5.ggpht.com/-jCRy7tz5cAY/AAAAAAAAAAI/AAAAAAAAAAA/JzgUyHzBB9U/s128-c0x00000000-cc-rp-mo/photo.jpg',
+            'rating': 5,
+            'relative_time_description': '2 года назад',
+            'text': 'Топовое архитектурное и конструкторское бюро',
+            'time': 1498660946
+          },
+          {
+            'author_name': 'Аглая Никифорова',
+            'author_url': 'https://www.google.com/maps/contrib/103966526392116459427/reviews',
+            'language': 'ru',
+            'profile_photo_url': 'https://lh3.ggpht.com/-zDxxhghiyfs/AAAAAAAAAAI/AAAAAAAAAAA/Px4F_Jj-VOk/s128-c0x00000000-cc-rp-mo/photo.jpg',
+            'rating': 5,
+            'relative_time_description': '2 года назад',
+            'text': 'Хорошие мастера, красивое место. ',
+            'time': 1492973529
+          },
+          {
+            'author_name': 'Асылбек Кутуев',
+            'author_url': 'https://www.google.com/maps/contrib/109931217699535953956/reviews',
+            'language': 'ru',
+            'profile_photo_url': 'https://lh3.ggpht.com/-Wcj4YtbtXM8/AAAAAAAAAAI/AAAAAAAAAAA/nbYkBMg4TYk/s128-c0x00000000-cc-rp-mo/photo.jpg',
+            'rating': 5,
+            'relative_time_description': '3 года назад',
+            'text': ' ',
+            'time': 1460970377
+          },
+          {
+            'author_name': 'Александр Иванов',
+            'author_url': 'https://www.google.com/maps/contrib/102040902115898992383/reviews',
+            'profile_photo_url': 'https://lh4.ggpht.com/-_EsVfy3t_zU/AAAAAAAAAAI/AAAAAAAAAAA/CvHI5-ZQBJo/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg',
+            'rating': 5,
+            'relative_time_description': '11 месяцев назад',
+            'text': '',
+            'time': 1538659773
+          }
+        ],
+        'scope': 'GOOGLE',
+        'types': [
+          'point_of_interest',
+          'establishment'
+        ],
+        'url': 'https://maps.google.com/?cid=16887123588422454195',
+        'user_ratings_total': 30,
+        'utc_offset': 180,
+        'vicinity': 'Манежный переулок, 3, Санкт-Петербург',
+        'website': 'http://www.studio44.ru/'
+      },
+      'status': 'OK'
+    }
+  ],
+  'place2': [
+    {
+      'html_attributions': [],
+      'next_page_token': 'CrQCJgEAAFt4tazVCNCbAOG0m9p55wlAWlGQuTQtp6ygmpiW0WgyTSX14Z9J6gj-YLc0ZI_Hy-p48jnVTUty1fzSl8RW1kXvLxh6X7OJgkSbuSgEYTrG-XNJ6ZldR_UUm4PmnM3kOg19bfMODajD6EvsSK5JQithuFex1IY0XmLIUvY_r16SZLb_tpYLU_3aJMztVraTaSu7DLS_5Yo6EfNqA0ERBEmuKHaAECyqBlyLaElofkP4HCBNilLr4WQrJDdqdtkf3ouAnGnslYGyyfK59Of_0oZVwsypInMhbyvN0Kb7CtoenXhvbmpblbFKfg56HsIK7HJhb0-My2IJO6g3w8UO7ak-Rs7BPybz42xKsK_J9oYh3qlnmtCKYlxPJ2tQSuXsObdSG_CzdBeLsUXlTEwRI5USEIb-nVfbOV3o6sssAXfDDCUaFIJ35XUouvHP5927DszRJ7Cq4Yss',
+      'results': [
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.97322699999999,
+              'lng': 30.319836
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.97455177989272,
+                'lng': 30.32145482989272
+              },
+              'southwest': {
+                'lat': 59.97185212010728,
+                'lng': 30.31875517010728
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': 'b9f1a917c3cfa4ad1fba53bd9657485d7104de0d',
+          'name': 'Ginza',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 3744,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/107344377328286744647/photos">Anna Dormidontova</a>'
+              ],
+              'photo_reference': 'CmRaAAAAFJT_E5f-NJmRJ-PlrZ4QCIZdmZY_imUkPz6aacih8EPx55pbLde-UewDsT28LmU533VCBVF4PGT6HjOVokw1WFWfkdCEOaHFG2k19zvEQGRxyt0BXN92lN--uvKkxEb4EhCLlteMsR5wNbUgqDUBWkeHGhSZ5UIgS5reC0a5_z_je--3abGMGA',
+              'width': 5616
+            }
+          ],
+          'place_id': 'ChIJvyNQQlgxlkYRVceQs4PysrU',
+          'plus_code': {
+            'compound_code': 'X8F9+7W Петроградский р-н, Санкт-Петербург',
+            'global_code': '9GFGX8F9+7W'
+          },
+          'price_level': 4,
+          'rating': 4.6,
+          'reference': 'ChIJvyNQQlgxlkYRVceQs4PysrU',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 642,
+          'vicinity': 'Аптекарский пр., 16, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.94339480000001,
+              'lng': 30.3238791
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.94478842989272,
+                'lng': 30.32516007989272
+              },
+              'southwest': {
+                'lat': 59.94208877010728,
+                'lng': 30.32246042010728
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': 'c5af07146e7656945a36df2a0cac2e2f82f7805d',
+          'name': 'Штакеншнейдер',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 696,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/108467463042222090160/photos">A Google User</a>'
+              ],
+              'photo_reference': 'CmRaAAAARAskx0biU0KYDeYPvrBB4w8CGQSyjSPzdHS6-QEo4f2JLfkoCO2K7cX6UaHaFOPSC5ngsVKHmV-_GCwGTWGOzmTAXag6ToZhMBC_dML1Ny7BZytCnR_dD0hClvtlVzauEhBpBFI4Xeug9BJKkss7r47NGhSAFUpZBc42yJawJS6B84-CznkD7w',
+              'width': 1200
+            }
+          ],
+          'place_id': 'ChIJMbeBExIxlkYRXasLU_TtY88',
+          'plus_code': {
+            'compound_code': 'W8VF+9H Центральный р-н, Санкт-Петербург',
+            'global_code': '9GFGW8VF+9H'
+          },
+          'price_level': 3,
+          'rating': 4.8,
+          'reference': 'ChIJMbeBExIxlkYRXasLU_TtY88',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 252,
+          'vicinity': 'Миллионная ул., 10, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.935263,
+              'lng': 30.308096
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.93660847989271,
+                'lng': 30.30966507989272
+              },
+              'southwest': {
+                'lat': 59.93390882010726,
+                'lng': 30.30696542010728
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': 'b2f1bfd872bfee7a145b3148417d113057eb3394',
+          'name': 'Percorso',
+          'photos': [
+            {
+              'height': 3024,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/109075939476615179882/photos">Chamara Wijesinghe</a>'
+              ],
+              'photo_reference': 'CmRaAAAAnHgln4Egje4ZFwO8j-2EFr7HJJ-c_MY9d2xi-MgeFyFnKzYr1VkqSt0XxwJQfdUdsozrMMZRRE69FXPtpz7YY0FucK0c1qA85bgiJsqGPrGOHb5bSt--84hoIAR-bHYhEhDGZplloC5kVn-NAKt-PMvMGhTUQP6Wg4sXBwu_YAFKKHvnJjcf4w',
+              'width': 4032
+            }
+          ],
+          'place_id': 'ChIJpzQPpBsxlkYRLYEBMPSvuxE',
+          'plus_code': {
+            'compound_code': 'W8P5+46 Адмиралтейский р-н, Санкт-Петербург',
+            'global_code': '9GFGW8P5+46'
+          },
+          'rating': 4.8,
+          'reference': 'ChIJpzQPpBsxlkYRLYEBMPSvuxE',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 325,
+          'vicinity': 'Вознесенский пр., 1, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.9291287,
+              'lng': 30.3079589
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.93047587989273,
+                'lng': 30.30947647989272
+              },
+              'southwest': {
+                'lat': 59.92777622010728,
+                'lng': 30.30677682010727
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': 'b3c1b6ee3cb3cce2bad4115caf8d9a7f0e8b93ef',
+          'name': '1913 Год',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 3024,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/112653995854529753016/photos">Shinya Furuta</a>'
+              ],
+              'photo_reference': 'CmRaAAAAQgPp-ZUc3Euenk9dXgSwrH-7kauL1Sm_5ICB7zH2SohJe0DaUHQdzvu_0fkeKzYtQcv6cxS9vPzEtoHSEVoq4MSGi0ADnlT7-fuoKBAKVxKu7n9YxEiuD9SZ6YPF6pEOEhD2Ci9RMtATny37Tv_8BMwEGhSEcH88rnJdTaX-2RA4rZOeBUcS6Q',
+              'width': 4032
+            }
+          ],
+          'place_id': 'ChIJIegzzgIxlkYR8herEIenZbw',
+          'plus_code': {
+            'compound_code': 'W8H5+M5 Адмиралтейский р-н, Санкт-Петербург',
+            'global_code': '9GFGW8H5+M5'
+          },
+          'price_level': 2,
+          'rating': 4.6,
+          'reference': 'ChIJIegzzgIxlkYR8herEIenZbw',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 424,
+          'vicinity': 'Вознесенский пр., 13/2, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.93577699999999,
+              'lng': 30.317408
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.93715942989272,
+                'lng': 30.31863632989273
+              },
+              'southwest': {
+                'lat': 59.93445977010727,
+                'lng': 30.31593667010728
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': 'a209f97049317125f1be804f718cc2175b9b7018',
+          'name': 'Italy на Б.Морской',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 3024,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/106071164503708691130/photos">Виктор Бирюков</a>'
+              ],
+              'photo_reference': 'CmRaAAAAMztomYIIplie46XJJdWOoF8YjmS475JDyCoVPOfLahPykMn-eipAJkFY2pQRUrHSwotyq8Hx4Oi8M0D3tN6pjLubKZNYDi7XeCjR0yo6nFtocnqkyZL5wKZn7fd5OVszEhDuwyefHcKLiPcyC-cPF9rEGhSjRHQ5ry6B_g6QS1qldF2uNmahiA',
+              'width': 4032
+            }
+          ],
+          'place_id': 'ChIJqY5HSAUxlkYRV528bTOghGI',
+          'plus_code': {
+            'compound_code': 'W8P8+8X Центральный р-н, Санкт-Петербург',
+            'global_code': '9GFGW8P8+8X'
+          },
+          'price_level': 2,
+          'rating': 4.4,
+          'reference': 'ChIJqY5HSAUxlkYRV528bTOghGI',
+          'scope': 'GOOGLE',
+          'types': [
+            'meal_delivery',
+            'meal_takeaway',
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'store',
+            'establishment'
+          ],
+          'user_ratings_total': 1356,
+          'vicinity': 'Большая Морская ул., 14, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.95682529999999,
+              'lng': 30.3413563
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.95811712989273,
+                'lng': 30.34266637989273
+              },
+              'southwest': {
+                'lat': 59.95541747010729,
+                'lng': 30.33996672010728
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': '0ba7c5d5c46a43549774c01c5205707039fdf2b7',
+          'name': 'Видовой ресторан La Vue',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 4005,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/101181916729541909707/photos">A Google User</a>'
+              ],
+              'photo_reference': 'CmRaAAAAxoCWHJu5hPYdNOfHtiezaA_j_fF40ZGutdOZG2FPfpVYa40mmVuZTGcXuKNfUJWtOQAS-h-BLXQ_98BzbZe98pimHalmmaBQncjQfEG8XPSCWfyGw_fGBK7k3tdhW1hhEhD_rVPh6EufV6EVSffxHzYVGhThMwsuTUbdq9jl__M5NGtfM5g-4g',
+              'width': 6008
+            }
+          ],
+          'place_id': 'ChIJ68_PZGUxlkYRfR8EBsOcuDk',
+          'plus_code': {
+            'compound_code': 'X84R+PG Выборгский р-н, Санкт-Петербург',
+            'global_code': '9GFGX84R+PG'
+          },
+          'rating': 4.6,
+          'reference': 'ChIJ68_PZGUxlkYRfR8EBsOcuDk',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 524,
+          'vicinity': 'Пироговская наб., 5/2, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.96111,
+              'lng': 30.30352
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.96235237989271,
+                'lng': 30.30514587989272
+              },
+              'southwest': {
+                'lat': 59.95965272010727,
+                'lng': 30.30244622010728
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': '498a4fd084f982a3d29ac4fc58f556b4da03a702',
+          'name': 'Italy',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 2950,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/109366740064656577536/photos">Sookwang Kim</a>'
+              ],
+              'photo_reference': 'CmRaAAAA1dvH4wgz2suTi27tS6-E7gzokvVcFVdqR0lNpGu6RcfSw3BiAHzJsbCZklirUp3pOaV0rfL0fuQjm7tTlwvz4yopSTvQH9OVebwFutyVOc213LYtpeQWqQqutDcJwhGeEhDCdsKjhHGxuR-Nm3c5goYtGhR7zqYx7bXIeoX3VJEMaEa7OYjjZA',
+              'width': 5422
+            }
+          ],
+          'place_id': 'ChIJuZ5lDddSlkYRHTrtLvUTtLU',
+          'plus_code': {
+            'compound_code': 'X863+CC округ Петровский, Санкт-Петербург',
+            'global_code': '9GFGX863+CC'
+          },
+          'price_level': 2,
+          'rating': 4.5,
+          'reference': 'ChIJuZ5lDddSlkYRHTrtLvUTtLU',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'meal_delivery',
+            'meal_takeaway',
+            'food',
+            'point_of_interest',
+            'store',
+            'establishment'
+          ],
+          'user_ratings_total': 376,
+          'vicinity': 'торговый центр "Априори, Большой проспект П.С., 58, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.92638789999999,
+              'lng': 30.313318
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.92769957989272,
+                'lng': 30.31454137989272
+              },
+              'southwest': {
+                'lat': 59.92499992010728,
+                'lng': 30.31184172010728
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': '6de4d17cbe63256d14337b59677b6f48da7ce9d9',
+          'name': 'Северянин ресторан',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 1200,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/114518594932948232251/photos">Viajar Digital</a>'
+              ],
+              'photo_reference': 'CmRaAAAAH9tTZWq7X05aihisEWJwpqeGab5L2WM0TmmE5e2ZTQMrpRgXns5_DSpfFqazbVeK3Rhgv4XJnzXdW1y8c6-SIVWlZbIa_DoL426cwaTtiamvvoZHUcbS3XZs2P1PsjQWEhCLdl_BPZYoIBYfTN9l0H4FGhQjuH3S-hSZdAKca83R48AmcXNyuw',
+              'width': 1600
+            }
+          ],
+          'place_id': 'ChIJPyacFAIxlkYRrgjhMuUuklg',
+          'plus_code': {
+            'compound_code': 'W8G7+H8 Адмиралтейский р-н, Санкт-Петербург',
+            'global_code': '9GFGW8G7+H8'
+          },
+          'price_level': 2,
+          'rating': 4.6,
+          'reference': 'ChIJPyacFAIxlkYRrgjhMuUuklg',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 733,
+          'vicinity': 'Столярный пер., 18, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.93202199999999,
+              'lng': 30.2514331
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.93334117989272,
+                'lng': 30.25266987989272
+              },
+              'southwest': {
+                'lat': 59.93064152010728,
+                'lng': 30.24997022010728
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': 'b16cf08aa63d7af7fc27aec25d23c7c0299102dc',
+          'name': 'Ресторан Erarta',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 3024,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/106505289068774483401/photos">Герман Бежев</a>'
+              ],
+              'photo_reference': 'CmRZAAAA__LZw6gsV1nxVzHYilOpsBHqbRgF1Ga-tfKwycHqoGF0JRzQ28GaQH22QAHWxWbA427CkGZ0O5-OS17B8hvJfybQ_UfCQ_rxYAg3i12cXOumDia4hGQ0fyEirbt9en1eEhBHUZp4QsLLVDbECz0Arq2UGhSUT8P12xOaYDq49aJvEgXtnhxebQ',
+              'width': 4032
+            }
+          ],
+          'place_id': 'ChIJn9HNDtEwlkYRNmG5u-02MNA',
+          'plus_code': {
+            'compound_code': 'W7J2+RH Василеостровский р-н, Санкт-Петербург',
+            'global_code': '9GFGW7J2+RH'
+          },
+          'price_level': 2,
+          'rating': 4.6,
+          'reference': 'ChIJn9HNDtEwlkYRNmG5u-02MNA',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'cafe',
+            'bar',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 252,
+          'vicinity': 'Васильевский остров, 29-я линия 2, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.9349492,
+              'lng': 30.3087591
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.93630147989272,
+                'lng': 30.30998477989272
+              },
+              'southwest': {
+                'lat': 59.93360182010727,
+                'lng': 30.30728512010728
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': '77714daa7676a9271ff34b6475606790ecaa3e92',
+          'name': 'Cococo',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 2268,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/107419984303660818561/photos">iVan Diaz</a>'
+              ],
+              'photo_reference': 'CmRaAAAAwUwGu3hRxWkNaPoxzT31m_UVcGaM3TC5LSTRkKby45vY3GHnTLieEb5z60mb58PhaJ0vMaiSTFHxgnT0mcYFpKiRfi2bczrN7c8bqZiQRKUfVfoKWNCcTaUDerF1hwJ1EhDTTcjL3Vmg26mnp8um0biuGhTIPIC5-zN3LwMtLhGMn1QGN_o0lw',
+              'width': 4032
+            }
+          ],
+          'place_id': 'ChIJJ-SxT6AxlkYRgLNScU3DDlw',
+          'plus_code': {
+            'compound_code': 'W8M5+XG Адмиралтейский р-н, Санкт-Петербург',
+            'global_code': '9GFGW8M5+XG'
+          },
+          'price_level': 3,
+          'rating': 4.5,
+          'reference': 'ChIJJ-SxT6AxlkYRgLNScU3DDlw',
+          'scope': 'GOOGLE',
+          'types': [
+            'bar',
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 2091,
+          'vicinity': 'Вознесенский пр., 6, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.93187520000001,
+              'lng': 30.3591284
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.93324377989272,
+                'lng': 30.36087167989272
+              },
+              'southwest': {
+                'lat': 59.93054412010727,
+                'lng': 30.35817202010728
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': '0e69759e6b5bbcb01bd796e5267f09401543ebad',
+          'name': 'Москва',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 2448,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/112782784076390180208/photos">ilango van</a>'
+              ],
+              'photo_reference': 'CmRaAAAArjPfJz1nTqIgPCxGqU6u8W3I-khyZZwWZVpwjRtT6KkVO52cK51uP-rBjMBmtQW-tr7ik8KJG9YInyQNKs7I93k7gzvuzgMUuPoMFVx7nszKsDzCLmOeHnF621yKw-WbEhBjKJzCwKqrDueZkUZJlnd1GhT6eLb2yfDeXeavuiSEmwXJw3lFlw',
+              'width': 3264
+            }
+          ],
+          'place_id': 'ChIJaxtflaQxlkYR5V4jy4n-Smo',
+          'plus_code': {
+            'compound_code': 'W9J5+QM Центральный р-н, Санкт-Петербург',
+            'global_code': '9GFGW9J5+QM'
+          },
+          'price_level': 3,
+          'rating': 4.5,
+          'reference': 'ChIJaxtflaQxlkYR5V4jy4n-Smo',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 1523,
+          'vicinity': 'Невский пр., 114, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.9302765,
+              'lng': 30.3539211
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.93157112989272,
+                'lng': 30.35561012989272
+              },
+              'southwest': {
+                'lat': 59.92887147010728,
+                'lng': 30.35291047010727
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': '5ce7a628aa39e634790dff8616637ae1c99c7ab1',
+          'name': 'Гастрономика',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 2448,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/103229758385539067930/photos">Pavel Bulatov</a>'
+              ],
+              'photo_reference': 'CmRaAAAAQvQgk_bHnC1E_278A405CP8ORGsWMCCl6FmZs_mXoENdFdas8L0vqZECIeyry4ozey6g2Usj2J1OkIsXZ3hz0DVYCuc5_3XkOjhqt_n080BztdEnncoQLL3dBuxVzf9pEhAZH0JWy8tXv_mC0H4ZT0nhGhRodHqLwrrPHXqKwO9o0auKdo4XYw',
+              'width': 3264
+            }
+          ],
+          'place_id': 'ChIJI7CKp6UxlkYR-76a0Qb2bDU',
+          'plus_code': {
+            'compound_code': 'W9J3+4H Центральный р-н, Санкт-Петербург',
+            'global_code': '9GFGW9J3+4H'
+          },
+          'price_level': 3,
+          'rating': 4.4,
+          'reference': 'ChIJI7CKp6UxlkYR-76a0Qb2bDU',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 776,
+          'vicinity': 'ул. Марата, 5/21, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.9233291,
+              'lng': 30.3463494
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.92461037989273,
+                'lng': 30.34783287989272
+              },
+              'southwest': {
+                'lat': 59.92191072010728,
+                'lng': 30.34513322010728
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': '9809d75b370b2ab238c458e79ebb747502c8160b',
+          'name': 'Ресторан «Симпозиум»',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 2208,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/102861009602499186059/photos">Надежда Волкова</a>'
+              ],
+              'photo_reference': 'CmRaAAAAp4kak7PO7A2t_hfyrLgCJP9SNFMNZeh7Q7t2rzE-C5eLkPoDDLpDvBRS6D7AiPyxhODuFKAccST7do49dp1lC9QXDpVStutDauG8xJ3Yc33YqLOkbY0jRFuMNnHRfJSMEhBjlQX03ctrEqlXdsJcgSGoGhTZPw61pqzttHLN_wo7Cz-0b62_iQ',
+              'width': 3920
+            }
+          ],
+          'place_id': 'ChIJt2oo2a0xlkYRW1rzg0MIScY',
+          'plus_code': {
+            'compound_code': 'W8FW+8G Центральный р-н, Санкт-Петербург',
+            'global_code': '9GFGW8FW+8G'
+          },
+          'price_level': 2,
+          'rating': 4.7,
+          'reference': 'ChIJt2oo2a0xlkYRW1rzg0MIScY',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 175,
+          'vicinity': 'улица Достоевского 19/21М, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.93200599999999,
+              'lng': 30.3053464
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.93326517989271,
+                'lng': 30.30677812989272
+              },
+              'southwest': {
+                'lat': 59.93056552010727,
+                'lng': 30.30407847010727
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': 'e3b1ac7ed02907c47218e156c0383b324d82f495',
+          'name': 'Teplo',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 4032,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/101578495921272593139/photos">Валентина Дуннен</a>'
+              ],
+              'photo_reference': 'CmRaAAAAAdKlnlkOjzHJkPgjrBC6G6Ly9_AXvce4YuTGgUWfQjcp7DL-xjWLAlXeuCaAYze6GoJguA5dD8FrnSDUqPu6JSHZs7Cl9TmQlwfsnLGYY02EmKIfrI6sQ7npaftThqizEhBOV4-3qaDzH3Zt36nytjGeGhT8hCeYd9gLD4m9kia68QeZd35JNw',
+              'width': 3024
+            }
+          ],
+          'place_id': 'ChIJ--3kxxoxlkYRzqdxgDlq2to',
+          'plus_code': {
+            'compound_code': 'W8J4+R4 Адмиралтейский р-н, Санкт-Петербург',
+            'global_code': '9GFGW8J4+R4'
+          },
+          'price_level': 2,
+          'rating': 4.7,
+          'reference': 'ChIJ--3kxxoxlkYRzqdxgDlq2to',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 1955,
+          'vicinity': 'Большая Морская ул., 45, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.93250870000001,
+              'lng': 30.3472552
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.93395847989272,
+                'lng': 30.34865197989273
+              },
+              'southwest': {
+                'lat': 59.93125882010727,
+                'lng': 30.34595232010728
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': 'b3aeafa5d0a2a219096e1a8f35f35cfa58d320d8',
+          'name': 'Ресторан и банкетный зал ПАЛКИНЪ',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 3120,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/116196850776100279766/photos">A Google User</a>'
+              ],
+              'photo_reference': 'CmRZAAAAGdVBK5uUfVxIghxbPpydyUNSrCA0Seo4RNzH8HxN4Jo4YPRyQtI5Thps6myXqs-Q3Pl29eKoW8YY0_NuFx3ZL2YR5SrDkTyY6XtH7MMmvTzK9ti2srHU_PifgXY9AA6BEhDfPUObKDBU3Hpu_NjsYsvCGhRm4EXaDxNRYlarzGc7drISG6qlJw',
+              'width': 4160
+            }
+          ],
+          'place_id': 'ChIJz1zUYKYxlkYRZMGiMVFc784',
+          'plus_code': {
+            'compound_code': 'W8MW+2W Центральный р-н, Санкт-Петербург',
+            'global_code': '9GFGW8MW+2W'
+          },
+          'price_level': 4,
+          'rating': 4.6,
+          'reference': 'ChIJz1zUYKYxlkYRZMGiMVFc784',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'bakery',
+            'food',
+            'point_of_interest',
+            'store',
+            'establishment'
+          ],
+          'user_ratings_total': 688,
+          'vicinity': 'Невский пр., 47, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.9463719,
+              'lng': 30.3476454
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.94781142989271,
+                'lng': 30.34899872989272
+              },
+              'southwest': {
+                'lat': 59.94511177010727,
+                'lng': 30.34629907010727
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': 'd4860a5f7a668bff9b4ca9d52fd09bbb3e1cc43d',
+          'name': 'Вино и Вода',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 4160,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/116852419279014979391/photos">Александра Данилова</a>'
+              ],
+              'photo_reference': 'CmRaAAAA3gHX-7GvcdFkSkaP757Hv2xRDcIW4ramAUs4x1IETaSGHeor5y-BSHSYy1T6CyzB9lJHY7CuBgKszPGSbB31frwy_9L1zjROGifg7ZBRVhc-S1ZCgCV4aIAvCbOjMneuEhB2JdnXznH3ukjQbjKEJ7JxGhTLE1iOLTo-5Q70qy4eh68ymMtcbQ',
+              'width': 3120
+            }
+          ],
+          'place_id': 'ChIJydnTWnQxlkYR1Tx-elelqbU',
+          'plus_code': {
+            'compound_code': 'W8WX+G3 Центральный р-н, Санкт-Петербург',
+            'global_code': '9GFGW8WX+G3'
+          },
+          'rating': 4.7,
+          'reference': 'ChIJydnTWnQxlkYR1Tx-elelqbU',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 208,
+          'vicinity': 'ул. Чайковского, 17, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.96576270000001,
+              'lng': 30.2389884
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.96694212989273,
+                'lng': 30.24041862989272
+              },
+              'southwest': {
+                'lat': 59.96424247010728,
+                'lng': 30.23771897010727
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': 'f7e8cc07513ad70451a03317ea23114912a2c230',
+          'name': 'Паруса',
+          'opening_hours': {
+            'open_now': True
+          },
+          'photos': [
+            {
+              'height': 1333,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/118331169847001859847/photos">Dmitry Voronov</a>'
+              ],
+              'photo_reference': 'CmRaAAAAbt0cnxnoLMzyjVz-dSDtkKYLBdY5cTzVJyl0FtVMsedG4A7gFXfqj3a9Ewyvdb4X6lCXfebY-h9GE5jlh1NvDWEegThepDozqowb9aKkW4DYqefKN7TQIl_tKoL5QcoJEhDAadV6HNWqXc0h49vLpNt-GhSTwJHnPicmRfiqc1zf5MO_KS3ECg',
+              'width': 2000
+            }
+          ],
+          'place_id': 'ChIJFwxxSME2lkYRv0TT-3QROjQ',
+          'plus_code': {
+            'compound_code': 'X68Q+8H округ Петровский, Санкт-Петербург',
+            'global_code': '9GFGX68Q+8H'
+          },
+          'price_level': 3,
+          'rating': 4.4,
+          'reference': 'ChIJFwxxSME2lkYRv0TT-3QROjQ',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 1081,
+          'vicinity': 'Петровская коса, 9, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.9491331,
+              'lng': 30.305252
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.95047527989272,
+                'lng': 30.30638127989273
+              },
+              'southwest': {
+                'lat': 59.94777562010728,
+                'lng': 30.30368162010728
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': '13d0314fcf1ea8775f73789acf52b057a7000bec',
+          'name': 'Probka',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 3264,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/102440291224803352238/photos">mehrzad mehri</a>'
+              ],
+              'photo_reference': 'CmRaAAAAfQNeEyvGZTGeCu-UiBeKWoppcozfZE06_Pq_3XfwsyAdNHCyyPyKj-2fDRQ9PhVwRJOQ-f94gb0RGnMSBxmznuIdNhc9XgjTEpjb5TEge-wYUuE2NFjC8OaAPGRNVA52EhDblEb73SmURXA0hy-8VYaFGhQYPefI_HnRvuuohQ25Ui6XhtjwvA',
+              'width': 2448
+            }
+          ],
+          'place_id': 'ChIJFa76vKAxlkYRumMOR8V7L9M',
+          'plus_code': {
+            'compound_code': 'W8X4+M4 Петроградский р-н, Санкт-Петербург',
+            'global_code': '9GFGW8X4+M4'
+          },
+          'price_level': 3,
+          'rating': 4.6,
+          'reference': 'ChIJFa76vKAxlkYRumMOR8V7L9M',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 488,
+          'vicinity': 'Зоологический пер., 2-4, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.93817699999999,
+              'lng': 30.377957
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.93947392989272,
+                'lng': 30.37945612989272
+              },
+              'southwest': {
+                'lat': 59.93677427010727,
+                'lng': 30.37675647010727
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': 'f28817b0b3768640f4975a116182c20d5951ff3a',
+          'name': 'Чечил',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 2322,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/106105287686358050052/photos">Ehsan Rezaie</a>'
+              ],
+              'photo_reference': 'CmRaAAAAlQdx6lrny0fqhFfuNItD_OH3CFRcQx6Hp2nMuvMKDbQL5lFjWoDsQgRPdTSzom262twBLhJYhAcpWlE5nf-9Iv8ykTwyi9_pFLbHkj_CoHwO-e60l5G2iC9KXeeIgZFLEhDpqktv06ce-qaSdMxDxqulGhTCXd8bRSg7S09fsn4tipxw_G3GGA',
+              'width': 4128
+            }
+          ],
+          'place_id': 'ChIJg8UT-ZYxlkYRGSmWjgZuD24',
+          'plus_code': {
+            'compound_code': 'W9QH+75 Центральный р-н, Санкт-Петербург',
+            'global_code': '9GFGW9QH+75'
+          },
+          'price_level': 2,
+          'rating': 4.5,
+          'reference': 'ChIJg8UT-ZYxlkYRGSmWjgZuD24',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 707,
+          'vicinity': 'Дегтярный пер., 2, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.9260586,
+              'lng': 30.3157689
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.92736752989272,
+                'lng': 30.31719082989272
+              },
+              'southwest': {
+                'lat': 59.92466787010728,
+                'lng': 30.31449117010727
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': 'd231dcebab66cab46f7548d40b0afd4917d909a5',
+          'name': 'Едим Руками',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 2322,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/106105287686358050052/photos">Ehsan Rezaie</a>'
+              ],
+              'photo_reference': 'CmRaAAAAlQdx6lrny0fqhFfuNItD_OH3CFRcQx6Hp2nMuvMKDbQL5lFjWoDsQgRPdTSzom262twBLhJYhAcpWlE5nf-9Iv8ykTwyi9_pFLbHkj_CoHwO-e60l5G2iC9KXeeIgZFLEhDpqktv06ce-qaSdMxDxqulGhTCXd8bRSg7S09fsn4tipxw_G3GGA',
+              'width': 4128
+            }
+          ],
+          'place_id': 'ChIJg8UT-ZYxlkYRGSmWjgZuD24',
+          'plus_code': {
+            'compound_code': 'W9QH+75 Центральный р-н, Санкт-Петербург',
+            'global_code': '9GFGW9QH+75'
+          },
+          'price_level': 2,
+          'rating': 4.5,
+          'reference': 'ChIJg8UT-ZYxlkYRGSmWjgZuD24',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 707,
+          'vicinity': 'Дегтярный пер., 2, Санкт-Петербург'
+        },
+        {
+          'geometry': {
+            'location': {
+              'lat': 59.9260586,
+              'lng': 30.3157689
+            },
+            'viewport': {
+              'northeast': {
+                'lat': 59.92736752989272,
+                'lng': 30.31719082989272
+              },
+              'southwest': {
+                'lat': 59.92466787010728,
+                'lng': 30.31449117010727
+              }
+            }
+          },
+          'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png',
+          'id': 'd231dcebab66cab46f7548d40b0afd4917d909a5',
+          'name': 'Едим Руками',
+          'opening_hours': {
+            'open_now': False
+          },
+          'photos': [
+            {
+              'height': 3456,
+              'html_attributions': [
+                '<a href="https://maps.google.com/maps/contrib/105178182805187308200/photos">彭月欣</a>'
+              ],
+              'photo_reference': 'CmRaAAAAkQb6_9P9ZZUX2I7yxv4NAxsywh5NkaE4mH_MA0ZpKzzomTjYsHRung9DIDcCllVTfFozkTPhwdQCY7tIrHyhqm7ZeFPnfkUeFXc68MEOOBbAxX0Z2POAPshOXZV_B6jlEhBdvsOkaLjwG4R_nXUAbi0CGhSFx83Zbkv1kaDR_XqSX4FjNhK1Lw',
+              'width': 4608
+            }
+          ],
+          'place_id': 'ChIJffR0HQIxlkYRYxcgLaDR-4w',
+          'plus_code': {
+            'compound_code': 'W8G8+C8Адмиралтейскийр-н,Санкт-Петербург',
+            'global_code': '9GFGW8G8+C8'
+          },
+          'price_level': 2,
+          'rating': 4.6,
+          'reference': 'ChIJffR0HQIxlkYRYxcgLaDR-4w',
+          'scope': 'GOOGLE',
+          'types': [
+            'restaurant',
+            'food',
+            'point_of_interest',
+            'establishment'
+          ],
+          'user_ratings_total': 937,
+          'vicinity': 'Садоваяул.,41,Санкт-Петербург'
+        }
+      ],
+      'status': 'OK'
+    }
+  ]
+}
