@@ -1,19 +1,20 @@
-from django.http import HttpResponse
-from django.views.decorators.csrf import csrf_exempt
-from rest_framework.renderers import JSONRenderer
-from rest_framework.parsers import JSONParser
+from idna import unicode
+from rest_framework.authentication import BasicAuthentication
+from rest_framework.permissions import IsAuthenticated
 from apiserver.models import User
 from apiserver.serializers import UserSerializer
 from rest_framework import status
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.response import Response
 import time
 
 
 # TODO Add CORS support
-#
+# TODO add security (cookies maybe)
 
 @api_view()
+@authentication_classes([BasicAuthentication])
+@permission_classes([IsAuthenticated])
 def health_check(request, **kwargs):
     if request.version == 'v1':
         referer = request.META.get('HTTP_REFERER')
@@ -21,6 +22,11 @@ def health_check(request, **kwargs):
             print(referer)
         else:
             print("No referrer")
+        content = {
+            'user': unicode(request.user),  # `django.contrib.auth.User` instance.
+            'auth': unicode(request.auth),  # None
+        }
+        print(content)
         return Response(data={'msg': 'Ok'}, status=status.HTTP_200_OK)
 
     elif request.version == 'v2':
