@@ -1,0 +1,15 @@
+version: "3.2"
+services:
+  minio:
+    image: minio/minio
+    #    restart: always
+    volumes:
+      - type: bind
+        source: ./minio-data
+        target: /mnt/minio
+    environment:
+      MINIO_ACCESS_KEY: user
+      MINIO_SECRET_KEY: password
+    command: server /mnt/minio
+    ports:
+      - 127.0.0.1:9240:9000
