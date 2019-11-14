@@ -6,6 +6,7 @@ from apiserver.serializers import UserSerializer
 from rest_framework import status
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.response import Response
+from apiserver.utils.utils import auth_user
 import time
 
 
@@ -33,7 +34,10 @@ def health_check(request, **kwargs):
         return Response(data={'msg': 'Not implemented yet'}, status=status.HTTP_404_NOT_FOUND)
 
 
+
 @api_view(['GET', 'POST'])
+@authentication_classes([BasicAuthentication])
+@permission_classes([IsAuthenticated])
 def users_list(request, format=None, **kwargs):
     """
     List all users or create a new one
@@ -68,6 +72,8 @@ def users_list(request, format=None, **kwargs):
 
 
 @api_view(['GET', 'PUT', 'DELETE'])
+@authentication_classes([BasicAuthentication])
+@permission_classes([IsAuthenticated])
 def user_detail(request, pk, format=None, **kwargs):
     """
     Retrieve, updated or delete a user
@@ -102,6 +108,8 @@ def user_detail(request, pk, format=None, **kwargs):
 
 
 @api_view()
+@authentication_classes([BasicAuthentication])
+@permission_classes([IsAuthenticated])
 def workload(request, **kwargs):
     if request.version == 'v1':
         print("Processing")

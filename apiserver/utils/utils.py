@@ -1,5 +1,22 @@
 import re
 
+from django.contrib.auth.models import User
+from rest_framework.authtoken.models import Token
+
+TOKEN_AUTH_ENABLED = False
+
+def auth_user(user_token: str) -> bool:
+    if TOKEN_AUTH_ENABLED:
+        for user in User.objects.all():
+            token = Token.objects.get_or_create(user=user)
+            if str(token[0]) == user_token:
+                return True
+            else:
+                continue
+        return False
+    else:
+        return True
+
 
 def get_referer_view(request, default=None):
     '''
