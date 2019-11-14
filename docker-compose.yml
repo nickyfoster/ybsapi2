@@ -1,8 +1,9 @@
 version: "3.2"
 services:
+  db:
+    image: postgres
   minio:
     image: minio/minio
-    #    restart: always
     volumes:
       - type: bind
         source: ./minio-data
@@ -12,4 +13,14 @@ services:
       MINIO_SECRET_KEY: password
     command: server /mnt/minio
     ports:
-      - 127.0.0.1:9240:9000
+      - 0.0.0.0:9000:9000
+  ybsapi:
+    build: .
+    command: python manage.py runserver 0.0.0.0:5000
+    volumes:
+      - .:/code
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+

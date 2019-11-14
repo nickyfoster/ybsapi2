@@ -10,4 +10,3 @@ class User(models.Model):
         ordering = ('created',)
 
 
-# c867783d3a05d550196792dca7ecb7cdd757f0ac

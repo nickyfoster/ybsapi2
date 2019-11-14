@@ -2,8 +2,8 @@ import re
 
 from django.contrib.auth.models import User
 from rest_framework.authtoken.models import Token
-from ybsapi2.settings import TOKEN_AUTH_ENABLED
 
+TOKEN_AUTH_ENABLED = False
 
 def auth_user(user_token: str) -> bool:
     if TOKEN_AUTH_ENABLED:
