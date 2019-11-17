@@ -57,10 +57,12 @@ def users_list(request, **kwargs):
                     list_of_users = User.objects.filter(vk_id=vk_id)
                     if not list_of_users:
                         serializer.save()
+                        msg = "new user created"
                     else:
                         user = list_of_users[0]
                         serializer = UserSerializer(user)
-                    return Response(serializer.data)
+                        msg = "user exists"
+                    return Response(data={'msg': msg}, status=status.HTTP_200_OK)
                 else:
                     return Response(data={'msg': 'Empty Vk id'}, status=status.HTTP_400_BAD_REQUEST)
             else:
@@ -99,32 +101,9 @@ def user_detail(request, pk, **kwargs):
 
         elif request.method == 'DELETE':
             user.delete()
-            return Response(status=status.HTTP_204_NO_CONTENT)
+            msg = "user deleted"
+            return Response(data={'msg': msg}, status=status.HTTP_200_OK)
 
-    elif request.version == 'v2':
-        return Response(data={'msg': 'Not implemented yet'}, status=status.HTTP_404_NOT_FOUND)
-
-
-@api_view()
-@authentication_classes([BasicAuthentication])
-@permission_classes([IsAuthenticated])
-def workload(request, **kwargs):
-    """
-    Test workload func
-    :param request:
-    :param kwargs:
-    :return:
-    """
-    if request.version == 'v1':
-        print("Processing")
-        ts1 = time.time()
-        res = []
-        for x in range(1000000, 1001050):
-            value = 2 ** x
-            res.append(value)
-        ts2 = round((time.time() - ts1), 2)
-        print(f"****** {ts2} seconds ****** ")
-        return Response(data={'msg': f'Done in {ts2} seconds'}, status=status.HTTP_200_OK)
     elif request.version == 'v2':
         return Response(data={'msg': 'Not implemented yet'}, status=status.HTTP_404_NOT_FOUND)
 
