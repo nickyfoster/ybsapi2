@@ -6,11 +6,9 @@ from apiserver.serializers import UserSerializer
 from rest_framework import status
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.response import Response
-import time
 
 
 # TODO Add CORS support
-# TODO add security (cookies maybe)
 
 @api_view()
 @authentication_classes([BasicAuthentication])
