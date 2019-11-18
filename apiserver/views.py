@@ -6,12 +6,9 @@ from apiserver.serializers import UserSerializer
 from rest_framework import status
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.response import Response
-from apiserver.utils.utils import auth_user
-import time
 
 
 # TODO Add CORS support
-# TODO add security (cookies maybe)
 
 @api_view()
 @authentication_classes([BasicAuthentication])
@@ -24,7 +21,7 @@ def health_check(request, **kwargs):
         else:
             print("No referrer")
         content = {
-            'user': unicode(request.user),  # `django.contrib.auth.User` instance.
+            'user': unicode(request.user),  # django.contrib.auth.User` instance.
             'auth': unicode(request.auth),  # None
         }
         print(content)
@@ -34,11 +31,10 @@ def health_check(request, **kwargs):
         return Response(data={'msg': 'Not implemented yet'}, status=status.HTTP_404_NOT_FOUND)
 
 
-
 @api_view(['GET', 'POST'])
 @authentication_classes([BasicAuthentication])
 @permission_classes([IsAuthenticated])
-def users_list(request, format=None, **kwargs):
+def users_list(request, **kwargs):
     """
     List all users or create a new one
     :param request:
@@ -59,10 +55,12 @@ def users_list(request, format=None, **kwargs):
                     list_of_users = User.objects.filter(vk_id=vk_id)
                     if not list_of_users:
                         serializer.save()
+                        msg = "new user created"
                     else:
                         user = list_of_users[0]
                         serializer = UserSerializer(user)
-                    return Response(serializer.data)
+                        msg = "user exists"
+                    return Response(data={'msg': msg}, status=status.HTTP_200_OK)
                 else:
                     return Response(data={'msg': 'Empty Vk id'}, status=status.HTTP_400_BAD_REQUEST)
             else:
@@ -74,7 +72,7 @@ def users_list(request, format=None, **kwargs):
 @api_view(['GET', 'PUT', 'DELETE'])
 @authentication_classes([BasicAuthentication])
 @permission_classes([IsAuthenticated])
-def user_detail(request, pk, format=None, **kwargs):
+def user_detail(request, pk, **kwargs):
     """
     Retrieve, updated or delete a user
     :param request:
@@ -101,7 +99,8 @@ def user_detail(request, pk, format=None, **kwargs):
 
         elif request.method == 'DELETE':
             user.delete()
-            return Response(status=status.HTTP_204_NO_CONTENT)
+            msg = "user deleted"
+            return Response(data={'msg': msg}, status=status.HTTP_200_OK)
 
     elif request.version == 'v2':
         return Response(data={'msg': 'Not implemented yet'}, status=status.HTTP_404_NOT_FOUND)
@@ -110,16 +109,11 @@ def user_detail(request, pk, format=None, **kwargs):
 @api_view()
 @authentication_classes([BasicAuthentication])
 @permission_classes([IsAuthenticated])
-def workload(request, **kwargs):
+def groups(request, **kwargs):
     if request.version == 'v1':
-        print("Processing")
-        ts1 = time.time()
-        res = []
-        for x in range(1000000, 1001050):
-            value = 2 ** x
-            res.append(value)
-        ts2 = round((time.time() - ts1), 2)
-        print(f"****** {ts2} seconds ****** ")
-        return Response(data={'msg': f'Done in {ts2} seconds'}, status=status.HTTP_200_OK)
+        if request.method == 'GET':
+            pass
+        elif request.method == 'POST':
+            pass
     elif request.version == 'v2':
         return Response(data={'msg': 'Not implemented yet'}, status=status.HTTP_404_NOT_FOUND)
