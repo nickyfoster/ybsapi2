@@ -1,5 +1,5 @@
-from ybsapi.apiserver.KWE import UDPipeKeywordsExtractorProcess
-from ybsapi.apiserver.resources import UDPIPE_MODEL, USERS_GROUPS_DATA
+from apiserver.KWE import UDPipeKeywordsExtractorProcess
+from apiserver import UDPIPE_MODEL, USERS_GROUPS_DATA
 import json
 import time
 
