@@ -3,6 +3,6 @@ python:
   - "3.7"
 install:
   - python setup.py install
-before_script:
-  - python manage.py runserver
+before_install:
+  - ./restart.sh
 script: pytest
