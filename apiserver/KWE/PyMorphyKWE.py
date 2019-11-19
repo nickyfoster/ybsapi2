@@ -25,6 +25,11 @@ class PyMorphyKWE:
         return keywords
 
     def format_user_keywords(self, user_keywords):
+        '''
+
+        :param user_keywords:
+        :return:
+        '''
         return set(user_keywords) & set(self.true_keywords)
 
     def get_keywords_from_groups(self, groups, limit=40, frequency=2):

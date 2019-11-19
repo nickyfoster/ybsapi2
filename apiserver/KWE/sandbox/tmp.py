@@ -6,7 +6,7 @@ import time
 ts1 = time.time()
 
 
-with USERS_GROUPS_DATA.open() as file:
+with USERS_GROUPS_DATA.open(encoding='utf-8') as file:
     users_groups_data = json.load(file)
 
 groups_names = []
@@ -20,6 +20,7 @@ for user, groups in users_groups_data.items():
         except Exception as e:
             pass
 
+print(groups_descriptions)
 exctractor = UDPipeKeywordsExtractorProcess(str(UDPIPE_MODEL))
 result = exctractor.process_task(groups_descriptions)
 
