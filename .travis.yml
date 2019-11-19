@@ -1,23 +1,6 @@
-sudo: required
 language: python
-services:
-  - docker
 python:
   - "3.7"
-
-before_install:
-  - sudo rm /usr/local/bin/docker-compose
-  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
-  - chmod +x docker-compose
-#  - sudo mv docker-compose /usr/local/bin
 install:
   - python setup.py install
-before_script:
-  - docker-compose up -d --build
-#script: pytest
-script:
-  - docker-compose exec ybsapi pytest
-after_script:
-  - docker-compose down
-
-
+script: pytest
