@@ -1,25 +1,24 @@
+sudo: required
 language: python
+services:
+  - docker
 python:
   - "3.7"
 virtualenv:
   system_site_packages: true
-
-install:
-  - python setup.py install
-
-before_script:
-  - sudo apt-get update
-  - sudo apt-get install -o Dpkg::Options::="--force-confold" --force-yes -y docker-engine
-  - docker-compose --version
+before_install:
   - sudo rm /usr/local/bin/docker-compose
   - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
-  - docker-compose --version
-  - docker-compose pull
-  - docker-compose build
-  - docker-compose start
-
-script: pytest
+install:
+  - python setup.py install
+before_script:
+  - docker-compose up -d --build
+#script: pytest
+script:
+  - docker-compose exec ybsapi pytest
+after_script:
+  - docker-compose down
 
 

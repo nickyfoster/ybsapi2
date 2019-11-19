@@ -38,6 +38,7 @@ setup(
         "idna",
         "ufal.udpipe",
         "conllu",
+        "pytest"
     ],
     cmdclass={
         'develop': PostDevelopCommand,
