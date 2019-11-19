@@ -1,6 +1,6 @@
-from apiserver.KWE.utilities import UDPipeKeywordsExtractor
+from ybsapi.apiserver.KWE import UDPipeKeywordsExtractor
 
-from apiserver.KWE.UDPipeModel import UDPipeModel
+from ybsapi.apiserver.KWE import UDPipeModel
 
 
 class UDPipeProcess():

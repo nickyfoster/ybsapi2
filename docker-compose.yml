@@ -7,16 +7,16 @@ services:
     volumes:
       - type: bind
         source: ./minio-data
-        target: /mnt/minio
+        target: /data
     environment:
       MINIO_ACCESS_KEY: user
       MINIO_SECRET_KEY: password
-    command: server /mnt/minio
+    command: server /minio
     ports:
       - 0.0.0.0:9000:9000
   ybsapi:
     build: .
-    command: python manage.py runserver 0.0.0.0:5000
+    command: python ybsapi/manage.py runserver 0.0.0.0:5000
     volumes:
       - .:/code
     ports:

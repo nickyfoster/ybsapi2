@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from apiserver.models import User
+from ybsapi.apiserver.models import User
 
 
 class UserSerializer(serializers.Serializer):

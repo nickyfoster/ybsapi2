@@ -11,8 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-from ybsapi2 import settings
-
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ybsapi2.settings')
 
 application = get_wsgi_application()
