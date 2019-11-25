@@ -28,7 +28,6 @@ setup(
     name='ybsapi',
     url='https://github.com/nickyfoster/ybsapi2',
     description='YBS Api server',
-    version='0.1.0',
     keywords='YBS nlu server API',
     packages=find_packages(exclude=['test', 'test.*']),
     install_requires=[
