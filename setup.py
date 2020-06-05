@@ -31,7 +31,7 @@ setup(
     keywords='YBS nlu server API',
     packages=find_packages(exclude=['test', 'test.*']),
     install_requires=[
-        "Django==2.2.7",
+        "Django==2.2.13",
         "psycopg2==2.8.4",
         "djangorestframework==3.10.3",
         "mysqlclient",
